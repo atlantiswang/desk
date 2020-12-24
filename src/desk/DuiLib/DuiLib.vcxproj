@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}</ProjectGuid>
+    <RootNamespace>DuiLib</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">false</EmbedManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</EmbedManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</EmbedManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</EmbedManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(ProjectName)_d</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(SolutionDir)Bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <IncludePath>./code;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <IncludePath>./code;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);$(RhinoPC);$(RhinoPC_Poco_Foundation);$(RhinoPC_Poco_JSON);$(RhinoPC_Poco_Data);$(RhinoPC_Poco_Net);$(RCFL_include);$(RCFL_vendor_include)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/DuiLib.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UILIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)/pdb/$(TargetName).pdb</ProgramDatabaseFile>
+      <BaseAddress>
+      </BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImportLibrary>
+      </ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Manifest>
+      <AdditionalManifestFiles>
+      </AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/DuiLib.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UILIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <BaseAddress>0x11000000</BaseAddress>
+      <ImportLibrary>$(SolutionDir)Lib\$(ProjectName)_d.lib</ImportLibrary>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/DuiLib.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UILIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0406</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BaseAddress>
+      </BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(TargetDir)/pdb/$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/DuiLib.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UILIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0406</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BaseAddress>0x11000000</BaseAddress>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)Lib\$(ProjectName).lib</ImportLibrary>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="code\Control\UIActiveX.cpp" />
+    <ClCompile Include="code\Control\UIAnimation.cpp" />
+    <ClCompile Include="code\Control\UIButton.cpp" />
+    <ClCompile Include="code\Control\UIColorPalette.cpp" />
+    <ClCompile Include="code\Control\UICombo.cpp" />
+    <ClCompile Include="code\Control\UIComboBox.cpp" />
+    <ClCompile Include="code\Control\UIDateTime.cpp" />
+    <ClCompile Include="code\Control\UIEdit.cpp" />
+    <ClCompile Include="code\Control\UIFadeButton.cpp" />
+    <ClCompile Include="code\Control\UIFlash.cpp" />
+    <ClCompile Include="code\Control\UIGifAnim.cpp" />
+    <ClCompile Include="code\Control\UIGifAnimEx.cpp" />
+    <ClCompile Include="code\Control\UIGroupBox.cpp" />
+    <ClCompile Include="code\Control\UIHotKey.cpp" />
+    <ClCompile Include="code\Control\UIIPAddress.cpp" />
+    <ClCompile Include="code\Control\UIIPAddressEx.cpp" />
+    <ClCompile Include="code\Control\UILabel.cpp" />
+    <ClCompile Include="code\Control\UIList.cpp" />
+    <ClCompile Include="code\Control\UIListEx.cpp" />
+    <ClCompile Include="code\Control\UIMenu.cpp" />
+    <ClCompile Include="code\Control\UIOption.cpp" />
+    <ClCompile Include="code\Control\UIProgress.cpp" />
+    <ClCompile Include="code\Control\UIRichEdit.cpp" />
+    <ClCompile Include="code\Control\UIRing.cpp" />
+    <ClCompile Include="code\Control\UIRollText.cpp" />
+    <ClCompile Include="code\Control\UIScrollBar.cpp" />
+    <ClCompile Include="code\Control\UISlider.cpp" />
+    <ClCompile Include="code\Control\UIText.cpp" />
+    <ClCompile Include="code\Control\UITreeView.cpp" />
+    <ClCompile Include="code\Control\UIWebBrowser.cpp" />
+    <ClCompile Include="code\Core\ControlFactory.cpp" />
+    <ClCompile Include="code\Core\UIBase.cpp" />
+    <ClCompile Include="code\Core\UIContainer.cpp" />
+    <ClCompile Include="code\Core\UIControl.cpp" />
+    <ClCompile Include="code\Core\UIDlgBuilder.cpp" />
+    <ClCompile Include="code\Core\UIManager.cpp" />
+    <ClCompile Include="code\Core\UIMarkup.cpp" />
+    <ClCompile Include="code\Core\UIRender.cpp" />
+    <ClCompile Include="code\Core\UIResourceManager.cpp" />
+    <ClCompile Include="code\Layout\UIAnimationTabLayout.cpp" />
+    <ClCompile Include="code\Layout\UIChildLayout.cpp" />
+    <ClCompile Include="code\Layout\UIHorizontalLayout.cpp" />
+    <ClCompile Include="code\Layout\UITabLayout.cpp" />
+    <ClCompile Include="code\Layout\UITileLayout.cpp" />
+    <ClCompile Include="code\Layout\UIVerticalLayout.cpp" />
+    <ClCompile Include="code\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="code\UILib.cpp" />
+    <ClCompile Include="code\Utils\DPI.cpp" />
+    <ClCompile Include="code\Utils\DragDropImpl.cpp" />
+    <ClCompile Include="code\Utils\TrayIcon.cpp" />
+    <ClCompile Include="code\Utils\UIDelegate.cpp" />
+    <ClCompile Include="code\Utils\UIShadow.cpp" />
+    <ClCompile Include="code\Utils\unzip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="code\Utils\Utils.cpp" />
+    <ClCompile Include="code\Utils\WinImplBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\Control\UIActiveX.h" />
+    <ClInclude Include="code\Control\UIAnimation.h" />
+    <ClInclude Include="code\Control\UIButton.h" />
+    <ClInclude Include="code\Control\UIColorPalette.h" />
+    <ClInclude Include="code\Control\UICombo.h" />
+    <ClInclude Include="code\Control\UIComboBox.h" />
+    <ClInclude Include="code\Control\UIDateTime.h" />
+    <ClInclude Include="code\Control\UIEdit.h" />
+    <ClInclude Include="code\Control\UIFadeButton.h" />
+    <ClInclude Include="code\Control\UIFlash.h" />
+    <ClInclude Include="code\Control\UIGifAnim.h" />
+    <ClInclude Include="code\Control\UIGifAnimEx.h" />
+    <ClInclude Include="code\Control\UIGroupBox.h" />
+    <ClInclude Include="code\Control\UIHotKey.h" />
+    <ClInclude Include="code\Control\UIIPAddress.h" />
+    <ClInclude Include="code\Control\UIIPAddressEx.h" />
+    <ClInclude Include="code\Control\UILabel.h" />
+    <ClInclude Include="code\Control\UIList.h" />
+    <ClInclude Include="code\Control\UIListEx.h" />
+    <ClInclude Include="code\Control\UIMenu.h" />
+    <ClInclude Include="code\Control\UIOption.h" />
+    <ClInclude Include="code\Control\UIProgress.h" />
+    <ClInclude Include="code\Control\UIRichEdit.h" />
+    <ClInclude Include="code\Control\UIRing.h" />
+    <ClInclude Include="code\Control\UIRollText.h" />
+    <ClInclude Include="code\Control\UIScrollBar.h" />
+    <ClInclude Include="code\Control\UISlider.h" />
+    <ClInclude Include="code\Control\UIText.h" />
+    <ClInclude Include="code\Control\UITreeView.h" />
+    <ClInclude Include="code\Control\UIWebBrowser.h" />
+    <ClInclude Include="code\Core\ControlFactory.h" />
+    <ClInclude Include="code\Core\UIBase.h" />
+    <ClInclude Include="code\Core\UIContainer.h" />
+    <ClInclude Include="code\Core\UIControl.h" />
+    <ClInclude Include="code\Core\UIDefine.h" />
+    <ClInclude Include="code\Core\UIDlgBuilder.h" />
+    <ClInclude Include="code\Core\UIManager.h" />
+    <ClInclude Include="code\Core\UIMarkup.h" />
+    <ClInclude Include="code\Core\UIRender.h" />
+    <ClInclude Include="code\Core\UIResourceManager.h" />
+    <ClInclude Include="code\Layout\UIAnimationTabLayout.h" />
+    <ClInclude Include="code\Layout\UIChildLayout.h" />
+    <ClInclude Include="code\Layout\UIHorizontalLayout.h" />
+    <ClInclude Include="code\Layout\UITabLayout.h" />
+    <ClInclude Include="code\Layout\UITileLayout.h" />
+    <ClInclude Include="code\Layout\UIVerticalLayout.h" />
+    <ClInclude Include="code\StdAfx.h" />
+    <ClInclude Include="code\UILib.h" />
+    <ClInclude Include="code\Utils\downloadmgr.h" />
+    <ClInclude Include="code\Utils\DPI.h" />
+    <ClInclude Include="code\Utils\DragDropImpl.h" />
+    <ClInclude Include="code\Utils\FlashEventHandler.h" />
+    <ClInclude Include="code\Utils\observer_impl_base.h" />
+    <ClInclude Include="code\Utils\stb_image.h" />
+    <ClInclude Include="code\Utils\TrayIcon.h" />
+    <ClInclude Include="code\Utils\UIDelegate.h" />
+    <ClInclude Include="code\Utils\UIShadow.h" />
+    <ClInclude Include="code\Utils\unzip.h" />
+    <ClInclude Include="code\Utils\Utils.h" />
+    <ClInclude Include="code\Utils\VersionHelpers.h" />
+    <ClInclude Include="code\Utils\WebBrowserEventHandler.h" />
+    <ClInclude Include="code\Utils\WinImplBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="docs\directui license.txt" />
+    <Text Include="docs\duilib license.txt" />
+    <Text Include="docs\duilib_ultimate license.txt" />
+    <Text Include="docs\感谢.txt" />
+    <Text Include="docs\版权说明.txt" />
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="code\Utils\Flash11.tlb" />
+    <None Include="code\Utils\flash11.tlh" />
+    <None Include="docs\Duilib属性列表.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="docs\属性列表.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

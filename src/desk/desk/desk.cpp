@@ -1,0 +1,54 @@
+// desk.cpp : Defines the entry point for the application.
+//
+
+#include <Windows.h>
+#include "../DuiLib/code/UIlib.h"
+
+
+using namespace DuiLib;
+
+class CDuiFrameWnd : public CWindowWnd, public INotifyUI
+{
+public:
+    virtual LPCTSTR GetWindowClassName() const { return _T("DUIMainFrame"); }
+    virtual void    Notify(TNotifyUI& msg) {}
+
+    virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
+    {
+        LRESULT lRes = 0;
+
+        if (uMsg == WM_CREATE)
+        {
+            CControlUI *pWnd = new CButtonUI;
+            pWnd->SetText(_T("Hello World"));   // 设置文字
+            pWnd->SetBkColor(0xFF00FF00);       // 设置背景色
+
+            m_PaintManager.Init(m_hWnd);
+            m_PaintManager.AttachDialog(pWnd);
+            return lRes;
+        }
+
+        if (m_PaintManager.MessageHandler(uMsg, wParam, lParam, lRes))
+        {
+            return lRes;
+        }
+
+        return __super::HandleMessage(uMsg, wParam, lParam);
+    }
+
+protected:
+    CPaintManagerUI m_PaintManager;
+};
+
+int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
+                     _In_opt_ HINSTANCE hPrevInstance,
+                     _In_ LPWSTR    lpCmdLine,
+                     _In_ int       nCmdShow)
+{
+    CPaintManagerUI::SetInstance(hInstance);
+
+    CDuiFrameWnd duiFrame;
+    duiFrame.Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+    duiFrame.ShowModal();
+    return 0;
+}

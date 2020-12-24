@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="code">
+      <UniqueIdentifier>{d9ebc1f9-48f2-49de-94f6-23abc71d4f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\Control">
+      <UniqueIdentifier>{bb533e20-fb1d-4955-83b5-07b22790e264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\Core">
+      <UniqueIdentifier>{3b45530c-ea84-4dc7-b478-4ff1466a252a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\Layout">
+      <UniqueIdentifier>{ede7728d-c1aa-4572-9dec-7688cb614cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\Utils">
+      <UniqueIdentifier>{4e361078-6cc0-44ee-9671-df894ec1d0e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{212cc334-6f8e-422f-8bb5-c8f4b0b1eee5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\StdAfx.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\UILib.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIActiveX.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIAnimation.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIButton.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIColorPalette.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UICombo.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIComboBox.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIDateTime.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIEdit.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIFadeButton.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIFlash.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIGifAnim.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIGifAnimEx.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIGroupBox.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIHotKey.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIIPAddress.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIIPAddressEx.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UILabel.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIList.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIListEx.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIMenu.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIOption.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIProgress.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIRichEdit.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIRing.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIRollText.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIScrollBar.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UISlider.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIText.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UITreeView.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Control\UIWebBrowser.cpp">
+      <Filter>code\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\ControlFactory.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIBase.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIContainer.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIControl.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIDlgBuilder.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIManager.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIMarkup.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIRender.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Core\UIResourceManager.cpp">
+      <Filter>code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Layout\UIAnimationTabLayout.cpp">
+      <Filter>code\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Layout\UIChildLayout.cpp">
+      <Filter>code\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Layout\UIHorizontalLayout.cpp">
+      <Filter>code\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Layout\UITabLayout.cpp">
+      <Filter>code\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Layout\UITileLayout.cpp">
+      <Filter>code\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Layout\UIVerticalLayout.cpp">
+      <Filter>code\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\DPI.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\DragDropImpl.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\TrayIcon.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\UIDelegate.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\UIShadow.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\unzip.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\Utils.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Utils\WinImplBase.cpp">
+      <Filter>code\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\StdAfx.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\UILib.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIActiveX.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIAnimation.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIButton.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIColorPalette.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UICombo.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIComboBox.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIDateTime.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIEdit.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIFadeButton.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIFlash.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIGifAnim.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIGifAnimEx.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIGroupBox.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIHotKey.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIIPAddress.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIIPAddressEx.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UILabel.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIList.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIListEx.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIMenu.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIOption.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIProgress.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIRichEdit.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIRing.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIRollText.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIScrollBar.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UISlider.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIText.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UITreeView.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Control\UIWebBrowser.h">
+      <Filter>code\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\ControlFactory.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIBase.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIContainer.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIControl.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIDefine.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIDlgBuilder.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIManager.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIMarkup.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIRender.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Core\UIResourceManager.h">
+      <Filter>code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Layout\UIAnimationTabLayout.h">
+      <Filter>code\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Layout\UIChildLayout.h">
+      <Filter>code\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Layout\UIHorizontalLayout.h">
+      <Filter>code\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Layout\UITabLayout.h">
+      <Filter>code\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Layout\UITileLayout.h">
+      <Filter>code\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Layout\UIVerticalLayout.h">
+      <Filter>code\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\downloadmgr.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\DPI.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\DragDropImpl.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\FlashEventHandler.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\observer_impl_base.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\stb_image.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\TrayIcon.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\UIDelegate.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\UIShadow.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\unzip.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\Utils.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\VersionHelpers.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\WebBrowserEventHandler.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Utils\WinImplBase.h">
+      <Filter>code\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="docs\directui license.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="docs\duilib license.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="docs\duilib_ultimate license.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="docs\感谢.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="docs\版权说明.txt">
+      <Filter>docs</Filter>
+    </Text>
+    <Text Include="readme.txt">
+      <Filter>docs</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\Duilib属性列表.html">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="code\Utils\Flash11.tlb">
+      <Filter>code\Utils</Filter>
+    </None>
+    <None Include="code\Utils\flash11.tlh">
+      <Filter>code\Utils</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="docs\属性列表.xml">
+      <Filter>docs</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
