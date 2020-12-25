@@ -14,11 +14,13 @@
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\release\duilib.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\release\duilib.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

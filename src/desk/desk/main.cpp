@@ -20,7 +20,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 {
     CPaintManagerUI::SetInstance(hInstance);
     std::wstring instancePath = CPaintManagerUI::GetInstancePath();
-    instancePath.replace(instancePath.end() - 6, instancePath.end(), _T("release\\"));
+    instancePath.replace(instancePath.end() - wcslen(_T("Debug\\")), instancePath.end(), _T("release\\"));
     CPaintManagerUI::SetResourcePath(instancePath.c_str());
 
     CDuiFrameWnd duiFrame;
