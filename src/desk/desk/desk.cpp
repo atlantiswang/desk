@@ -4,40 +4,13 @@
 #include <Windows.h>
 #include "../DuiLib/code/UIlib.h"
 
-
 using namespace DuiLib;
 
-class CDuiFrameWnd : public CWindowWnd, public INotifyUI
+class CDuiFrameWnd : public WindowImplBase
 {
 public:
     virtual LPCTSTR GetWindowClassName() const { return _T("DUIMainFrame"); }
-    virtual void    Notify(TNotifyUI& msg) {}
-
-    virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
-    {
-        LRESULT lRes = 0;
-
-        if (uMsg == WM_CREATE)
-        {
-            CControlUI *pWnd = new CButtonUI;
-            pWnd->SetText(_T("Hello World"));   // 设置文字
-            pWnd->SetBkColor(0xFF00FF00);       // 设置背景色
-
-            m_PaintManager.Init(m_hWnd);
-            m_PaintManager.AttachDialog(pWnd);
-            return lRes;
-        }
-
-        if (m_PaintManager.MessageHandler(uMsg, wParam, lParam, lRes))
-        {
-            return lRes;
-        }
-
-        return __super::HandleMessage(uMsg, wParam, lParam);
-    }
-
-protected:
-    CPaintManagerUI m_PaintManager;
+    virtual CDuiString GetSkinFile() { return _T("duilib.xml"); }
 };
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
@@ -46,9 +19,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
     CPaintManagerUI::SetInstance(hInstance);
+    CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath());
 
     CDuiFrameWnd duiFrame;
     duiFrame.Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+    duiFrame.CenterWindow();
     duiFrame.ShowModal();
     return 0;
 }

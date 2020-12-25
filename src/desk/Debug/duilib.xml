@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,600" mininfo="100,100" caption="0,0,0,30" sizebox="4,4,4,4">
+  <VerticalLayout bkcolor="#FF00FF00" bkcolor2="#FFAAAAA0">
+      <HorizontalLayout height="30" bkcolor="#ffffffff">
+        <VerticalLayout />
+        <Button name="minbtn" tooltip="最小化" width="40" stateimage="res\systemBut_min.png" statecount="4"/>
+        <Button name="closebtn" tooltip="关闭" width="40" stateimage="res\common_btn_system_close.png" statecount="4"/>
+      </HorizontalLayout>
+      <HorizontalLayout>
+      </HorizontalLayout>
+  </VerticalLayout>
+</Window>
