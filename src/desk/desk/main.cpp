@@ -3,6 +3,7 @@
 
 #include <Windows.h>
 #include "../DuiLib/code/UIlib.h"
+#include <memory>
 
 using namespace DuiLib;
 
@@ -23,9 +24,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     instancePath.replace(instancePath.end() - wcslen(_T("Debug\\")), instancePath.end(), _T("release\\"));
     CPaintManagerUI::SetResourcePath(instancePath.c_str());
 
-    CDuiFrameWnd duiFrame;
-    duiFrame.Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
-    duiFrame.CenterWindow();
-    duiFrame.ShowModal();
+    std::unique_ptr<CDuiFrameWnd> pMainWnd(new CDuiFrameWnd);
+    pMainWnd->Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+    pMainWnd->CenterWindow();
+    pMainWnd->ShowModal();
     return 0;
 }
