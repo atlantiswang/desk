@@ -1,18 +1,11 @@
 // desk.cpp : Defines the entry point for the application.
 //
-
 #include <Windows.h>
 #include "../DuiLib/code/UIlib.h"
+#include "MainWindow/MainWindow.h"
 #include <memory>
 
 using namespace DuiLib;
-
-class CDuiFrameWnd : public WindowImplBase
-{
-public:
-    virtual LPCTSTR GetWindowClassName() const { return _T("DUIMainFrame"); }
-    virtual CDuiString GetSkinFile() { return _T("duilib.xml"); }
-};
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -23,9 +16,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     std::wstring instancePath = CPaintManagerUI::GetInstancePath();
     instancePath.replace(instancePath.end() - wcslen(_T("Debug\\")), instancePath.end(), _T("release\\"));
     CPaintManagerUI::SetResourcePath(instancePath.c_str());
-
-    std::unique_ptr<CDuiFrameWnd> pMainWnd(new CDuiFrameWnd);
-    pMainWnd->Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+    std::unique_ptr<MainWindow> pMainWnd(new MainWindow);
+    pMainWnd->Create(NULL, _T("MainWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
     pMainWnd->CenterWindow();
     pMainWnd->ShowModal();
     return 0;

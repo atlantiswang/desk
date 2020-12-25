@@ -9,6 +9,9 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{5b88bb82-13d9-4821-92df-62e788c7da9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -17,10 +20,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="MainWindow\MainWindow.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\release\duilib.xml">
       <Filter>Resource Files</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainWindow\MainWindow.h">
+      <Filter>MainWindow</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
