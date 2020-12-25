@@ -19,7 +19,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
     CPaintManagerUI::SetInstance(hInstance);
-    CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath());
+    std::wstring instancePath = CPaintManagerUI::GetInstancePath();
+    instancePath.replace(instancePath.end() - 6, instancePath.end(), _T("release\\"));
+    CPaintManagerUI::SetResourcePath(instancePath.c_str());
 
     CDuiFrameWnd duiFrame;
     duiFrame.Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);

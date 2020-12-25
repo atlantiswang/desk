@@ -28,6 +28,6 @@
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\Debug\duilib.xml" />
+    <Xml Include="..\release\duilib.xml" />
   </ItemGroup>
 </Project>
