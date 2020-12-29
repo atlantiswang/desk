@@ -12,26 +12,52 @@
     <Filter Include="MainWindow">
       <UniqueIdentifier>{5b88bb82-13d9-4821-92df-62e788c7da9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{e74af68b-e7c8-4461-a460-34f4e29e91ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
     <ClCompile Include="MainWindow\MainWindow.cpp">
       <Filter>MainWindow</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="..\release\duilib.xml">
-      <Filter>Resource Files</Filter>
-    </Xml>
+    <ClCompile Include="MsgDlg\MsgDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow\MainWindow.h">
       <Filter>MainWindow</Filter>
     </ClInclude>
+    <ClInclude Include="MsgDlg\MsgDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\release\res\msgdlg.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="..\release\res\res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="..\release\res\mainwindow.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="desk.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\release\res.zip" />
   </ItemGroup>
 </Project>

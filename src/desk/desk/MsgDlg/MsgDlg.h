@@ -3,16 +3,15 @@
 #include "../../DuiLib/code/UIlib.h"
 using namespace DuiLib;
 
-class MainWindow : public WindowImplBase
+class MsgDlg : public WindowImplBase
 {
 public:
-    MainWindow();
-    ~MainWindow();
+    MsgDlg();
+    ~MsgDlg();
     DUI_DECLARE_MESSAGE_MAP()
 public:
     virtual void InitWindow();
     virtual CDuiString GetSkinFile();
     virtual LPCTSTR GetWindowClassName() const;
-public:
     void OnClick(TNotifyUI& msg);
 };
