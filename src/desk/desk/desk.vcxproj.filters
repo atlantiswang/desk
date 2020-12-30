@@ -15,6 +15,12 @@
     <Filter Include="Dialog">
       <UniqueIdentifier>{e74af68b-e7c8-4461-a460-34f4e29e91ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sqlite3">
+      <UniqueIdentifier>{05eb5c0e-d84e-4f11-88ca-b0f1370c4329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Defines">
+      <UniqueIdentifier>{45dd0615-423e-42d9-8924-4dfa6b7b2525}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -29,6 +35,9 @@
     <ClCompile Include="WinMain.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="sqlite3\Sqlite3Adaptor.cpp">
+      <Filter>Sqlite3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow\MainWindow.h">
@@ -39,6 +48,12 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3\sqlite3.h">
+      <Filter>Sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3\Sqlite3Adaptor.h">
+      <Filter>Sqlite3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

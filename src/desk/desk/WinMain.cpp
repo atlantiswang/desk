@@ -14,9 +14,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
     CPaintManagerUI::SetInstance(hInstance);
-
-#ifdef _DEBUG
     std::wstring instancePath = CPaintManagerUI::GetInstancePath();
+    CPaintManagerUI::SetCurrentPath(instancePath.c_str());
+#ifdef _DEBUG
     instancePath.replace(instancePath.end() - wcslen(_T("Debug\\")), instancePath.end(), _T("release\\"));
     instancePath += _T("res\\");
     CPaintManagerUI::SetResourcePath(instancePath.c_str());
@@ -36,6 +36,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     {
         return -1;
     }
+
     std::unique_ptr<MainWindow> pMainWnd(new MainWindow);
     pMainWnd->Create(NULL, _T("MainWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
     pMainWnd->CenterWindow();

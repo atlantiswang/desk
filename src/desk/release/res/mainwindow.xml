@@ -7,6 +7,7 @@
         <Button name="closebtn" tooltip="关闭" width="40" stateimage="png\common_btn_system_close.png" statecount="4"/>
       </HorizontalLayout>
       <HorizontalLayout>
+        <Button name="ok" float="true" text="确定" pos="10,10,50,30" style="greenbtn" textcolor="#FFFFFFFF" />
       </HorizontalLayout>
   </VerticalLayout>
 </Window>

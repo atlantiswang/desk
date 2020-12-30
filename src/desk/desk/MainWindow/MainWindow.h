@@ -1,8 +1,10 @@
 #pragma once
 
 #include "../../DuiLib/code/UIlib.h"
-using namespace DuiLib;
+#include <memory>
 
+using namespace DuiLib;
+class DataBaseInterface;
 class MainWindow : public WindowImplBase
 {
 public:
@@ -15,4 +17,7 @@ public:
     virtual LPCTSTR GetWindowClassName() const;
 public:
     void OnClick(TNotifyUI& msg);
+
+private:
+    std::unique_ptr<DataBaseInterface> m_sqliteAdaptor;
 };

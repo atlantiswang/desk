@@ -1,24 +1,30 @@
 #include "MainWindow.h"
 #include "../MsgDlg/MsgDlg.h"
+#include "../sqlite3/Sqlite3Adaptor.h"
 
 DUI_BEGIN_MESSAGE_MAP(MainWindow, WindowImplBase)
     DUI_ON_MSGTYPE(DUI_MSGTYPE_CLICK, OnClick)
 DUI_END_MESSAGE_MAP()
 
-MainWindow::MainWindow()
+MainWindow::MainWindow():
+    m_sqliteAdaptor(new Sqlite3Adaptor)
 {
 }
 
 MainWindow::~MainWindow()
 {
+    m_sqliteAdaptor->UnInit();
 }
 
 void MainWindow::InitWindow()
 {
+    m_sqliteAdaptor->Init("desk.db");
+    m_sqliteAdaptor->Sqlite3Open();
+    m_sqliteAdaptor->SetLastRunTime("53545");
 }
 
 LPCTSTR MainWindow::GetWindowClassName() const
-{ 
+{
     return _T("MainWindow");
 }
 
