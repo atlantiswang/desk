@@ -1,6 +1,6 @@
 #include "MainWindow.h"
-#include "../MsgDlg/MsgDlg.h"
-#include "../sqlite3/Sqlite3Adaptor.h"
+#include "MsgDlg/MsgDlg.h"
+#include "sqlite3/Sqlite3Adaptor.h"
 
 DUI_BEGIN_MESSAGE_MAP(MainWindow, WindowImplBase)
     DUI_ON_MSGTYPE(DUI_MSGTYPE_CLICK, OnClick)
@@ -29,7 +29,7 @@ LPCTSTR MainWindow::GetWindowClassName() const
 }
 
 CDuiString MainWindow::GetSkinFile()
-{ 
+{
     return _T("XML_MAINWINDOW");
 }
 

@@ -1,5 +1,7 @@
 #include "Sqlite3Adaptor.h"
 #include <assert.h>
+#include <windows.h>
+#include <tchar.h>
 
 struct Sqlite3Adaptor::Impl
 {
@@ -89,6 +91,7 @@ void Sqlite3Adaptor::Sqlite3Exec(const std::string& sqlStr)
     if (nResult == SQLITE_OK)
     {
         // Ö´ÐÐ³É¹¦
+        OutputDebugString(_T("wanghao::Sqlite3Adaptor::Sqlite3Exec"));
     }
     sqlite3_finalize(stmt);
 }

@@ -1,6 +1,6 @@
 #pragma once
-#include "../sqlite3/sqlite3.h"
-#include "DataBaseInterface.h"
+#include "sqlite3/sqlite3.h"
+#include "defines/DataBaseInterface.h"
 #include <string>
 
 class Sqlite3Adaptor : public DataBaseInterface
