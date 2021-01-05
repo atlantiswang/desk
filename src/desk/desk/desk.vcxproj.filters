@@ -21,6 +21,9 @@
     <Filter Include="Defines">
       <UniqueIdentifier>{45dd0615-423e-42d9-8924-4dfa6b7b2525}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SetDlg">
+      <UniqueIdentifier>{c03e6ce4-efba-4350-adab-91a86ce062c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -37,6 +40,9 @@
     </ClCompile>
     <ClCompile Include="sqlite3\Sqlite3Adaptor.cpp">
       <Filter>Sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDlg\SetDlg.cpp">
+      <Filter>SetDlg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +61,9 @@
     <ClInclude Include="sqlite3\Sqlite3Adaptor.h">
       <Filter>Sqlite3</Filter>
     </ClInclude>
+    <ClInclude Include="SetDlg\SetDlg.h">
+      <Filter>SetDlg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\release\res\msgdlg.xml">
@@ -64,6 +73,9 @@
       <Filter>Resource Files</Filter>
     </Xml>
     <Xml Include="..\release\res\mainwindow.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="..\release\res\setdlg.xml">
       <Filter>Resource Files</Filter>
     </Xml>
   </ItemGroup>

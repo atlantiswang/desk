@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Window size="300,200" mininfo="100,100" caption="0,0,0,30">
-  <Font id="0" name="微软雅黑" size="12" default="true"/>
-  <Style name="greenbtn" value="bkcolor=&quot;#ff11D76D&quot; hotbkcolor=&quot;#ff20E67C&quot; pushedbkcolor=&quot;#ff0CC462&quot;"/>
   <VerticalLayout bkcolor="#FFFFFFFF">
       <HorizontalLayout height="30" bkcolor="#ffffffff">
         <VerticalLayout />
         <Button name="closebtn" tooltip="关闭" width="40" stateimage="png\common_btn_system_close.png" statecount="4"/>
       </HorizontalLayout>
     <HorizontalLayout bkcolor="#ffffffff">
-      <Button name="ok" float="true" text="确定" pos="10,10,50,30"/>
+      <Button name="ok" float="true" text="确定" pos="10,10,50,30" />
     </HorizontalLayout>
   </VerticalLayout>
 </Window>

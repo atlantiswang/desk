@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SetDlg\SetDlg.cpp" />
     <ClCompile Include="sqlite3\Sqlite3Adaptor.cpp" />
     <ClCompile Include="WinMain.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
@@ -172,13 +173,17 @@
     <ClInclude Include="MainWindow\MainWindow.h" />
     <ClInclude Include="MsgDlg\MsgDlg.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SetDlg\SetDlg.h" />
     <ClInclude Include="sqlite3\sqlite3.h" />
     <ClInclude Include="sqlite3\Sqlite3Adaptor.h" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\release\res\mainwindow.xml" />
+    <Xml Include="..\release\res\mainwindow.xml">
+      <SubType>Designer</SubType>
+    </Xml>
     <Xml Include="..\release\res\msgdlg.xml" />
     <Xml Include="..\release\res\res.xml" />
+    <Xml Include="..\release\res\setdlg.xml" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="desk.rc" />

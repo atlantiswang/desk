@@ -2,4 +2,5 @@
 <Res>
   <Xml id="XML_MAINWINDOW" path="mainwindow.xml"/>
   <Xml id="XML_MSG" path="msgdlg.xml"/>
+  <Xml id="XML_SET" path="setdlg.xml"/>
 </Res>

@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "desk", "desk\desk.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "DuiLib\DuiLib.vcxproj", "{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATLProject1", "ATLProject1\ATLProject1.vcxproj", "{046AFF3A-632B-440E-8ADC-6837A6E31088}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -34,6 +36,14 @@ Global
 		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x64.Build.0 = release|x64
 		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x86.ActiveCfg = release|Win32
 		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x86.Build.0 = release|Win32
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Debug|x64.ActiveCfg = Debug|x64
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Debug|x64.Build.0 = Debug|x64
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Debug|x86.ActiveCfg = Debug|Win32
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Debug|x86.Build.0 = Debug|Win32
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Release|x64.ActiveCfg = Release|x64
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Release|x64.Build.0 = Release|x64
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Release|x86.ActiveCfg = Release|Win32
+		{046AFF3A-632B-440E-8ADC-6837A6E31088}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

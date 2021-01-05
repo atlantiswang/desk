@@ -15,21 +15,26 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 {
     CPaintManagerUI::SetInstance(hInstance);
     std::wstring instancePath = CPaintManagerUI::GetInstancePath();
+
+    // 设置当前的工作目录
     CPaintManagerUI::SetCurrentPath(instancePath.c_str());
+
 #ifdef _DEBUG
     instancePath.replace(instancePath.end() - wcslen(_T("Debug\\")), instancePath.end(), _T("release\\"));
+#endif
+
+    // 设置资源的三种方法
+#if 1
     instancePath += _T("res\\");
     CPaintManagerUI::SetResourcePath(instancePath.c_str());
+#elif 0
+    CPaintManagerUI::SetResourcePath(instancePath.c_str());
+    CPaintManagerUI::SetResourceZip(_T("res.zip"));
 #else
-    #if 1
-        CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath());
-        CPaintManagerUI::SetResourceZip(_T("res.zip"));
-    #else
-        HRSRC hResource = ::FindResource(NULL, MAKEINTRESOURCE(IDR_ZIPRES), _T("ZIPRES"));
-        HGLOBAL hg = LoadResource(hInstance, hResource);
-        int nResData = SizeofResource(hInstance, hResource);
-        CPaintManagerUI::SetResourceZip((LPBYTE)::LockResource(hg), nResData);
-    #endif
+    HRSRC hResource = ::FindResource(NULL, MAKEINTRESOURCE(IDR_ZIPRES), _T("ZIPRES"));
+    HGLOBAL hg = LoadResource(hInstance, hResource);
+    int nResData = SizeofResource(hInstance, hResource);
+    CPaintManagerUI::SetResourceZip((LPBYTE)::LockResource(hg), nResData);
 #endif
 
     if (!CResourceManager::GetInstance()->LoadResource(_T("res.xml"), NULL))

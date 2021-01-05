@@ -1,0 +1,44 @@
+HKCR
+{    
+    NoRemove CLSID
+    {
+        ForceRemove {46c25b09-ca5e-432e-ba34-f56f120a5b28} = s 'Desk Shell Extension'
+        {
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+        }
+    }
+    NoRemove lnkfile
+    {
+       NoRemove shellex
+        {
+             NoRemove ContextMenuHandlers
+             {
+                ForceRemove Desk = s '{46c25b09-ca5e-432e-ba34-f56f120a5b28}'
+             }
+        }
+        
+    }
+}
+HKLM
+{
+    NoRemove SOFTWARE
+    {
+        NoRemove Classes
+        {
+            NoRemove lnkfile
+            {
+               NoRemove shellex
+                {
+                     NoRemove ContextMenuHandlers
+                     {
+                        ForceRemove Desk = s '{46c25b09-ca5e-432e-ba34-f56f120a5b28}'
+                     }
+                }
+                
+            }
+        }
+    }
+}
